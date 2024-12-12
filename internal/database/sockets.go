@@ -12,7 +12,7 @@ import (
 var upgrader = websocket.Upgrader{
 	CheckOrigin: func(r *http.Request) bool {
 		origin := r.Header.Get("Origin")
-		if origin == "http://localhost:5173" || origin == "https://mumble-frontend.vercel.app" {
+		if origin == "http://localhost:5173" || origin == "https://mumble-frontend-mu.vercel.app" {
 			return true
 		}
 		return false
